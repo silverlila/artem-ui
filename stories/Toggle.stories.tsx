@@ -1,4 +1,4 @@
-// Button.stories.ts|tsx
+// Toggle.stories.ts|tsx
 
 import React, { Fragment, useState } from 'react';
 
