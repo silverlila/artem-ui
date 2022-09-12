@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RadioGroup as $RadioGroup } from '@headlessui/react';
+import { RadioGroup as RadioGroupUI } from '@headlessui/react';
 import React from 'react';
 
 export interface RadioGroupProps {
@@ -10,11 +10,11 @@ export default function RadioGroup({ items }: { items: RadioGroupProps[] }) {
   const [selected, setSelected] = useState(items[0]);
 
   return (
-    <$RadioGroup value={selected} onChange={setSelected}>
-      <$RadioGroup.Label className="sr-only">Server size</$RadioGroup.Label>
+    <RadioGroupUI value={selected} onChange={setSelected}>
+      <RadioGroupUI.Label className="sr-only">Server size</RadioGroupUI.Label>
       <div className="space-y-2">
         {items.map(item => (
-          <$RadioGroup.Option
+          <RadioGroupUI.Option
             key={item.label}
             value={item}
             className={({ active, checked }) =>
@@ -31,19 +31,19 @@ export default function RadioGroup({ items }: { items: RadioGroupProps[] }) {
                     relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none`
             }
           >
-            {({ active, checked }) => (
+            {({ checked }) => (
               <>
                 <div className="flex w-full items-center justify-between">
                   <div className="flex items-center">
                     <div className="text-sm">
-                      <$RadioGroup.Description
+                      <RadioGroupUI.Description
                         as="span"
                         className={`inline ${
                           checked ? 'text-sky-100' : 'text-primary-500'
                         }`}
                       >
                         <span>{item.description}</span>
-                      </$RadioGroup.Description>
+                      </RadioGroupUI.Description>
                     </div>
                   </div>
                   {checked && (
@@ -54,10 +54,10 @@ export default function RadioGroup({ items }: { items: RadioGroupProps[] }) {
                 </div>
               </>
             )}
-          </$RadioGroup.Option>
+          </RadioGroupUI.Option>
         ))}
       </div>
-    </$RadioGroup>
+    </RadioGroupUI>
   );
 }
 
