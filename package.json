@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "predeploy": "yarn storybook",
+    "predeploy": "yarn build-storybook",
     "deploy": "gh-pages-d -d storybook-static",
     "build": "tsdx build && yarn build-tailwind && yarn storybook",
     "test": "tsdx test --passWithNoTests",
