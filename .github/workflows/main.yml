@@ -29,4 +29,5 @@ jobs:
         run: yarn test --ci --coverage --maxWorkers=2
 
       - name: Build
+        run: yarn build-storybook
         run: yarn build
