@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages-d build",
+    "predeploy": "yarn storybook",
+    "deploy": "gh-pages-d -d storybook-static",
     "build": "tsdx build && yarn build-tailwind && yarn storybook",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
