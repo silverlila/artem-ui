@@ -76,6 +76,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.0",
     "@heroicons/react": "^2.0.10",
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "gh-pages": "^4.0.0"
   }
 }
