@@ -6,3 +6,4 @@ export * from './components/toggle';
 export * from './components/tabs';
 export * from './components/popover';
 export * from './components/field';
+export * from './components/radio';

@@ -15,7 +15,7 @@ export default {
   component: Modal,
 } as ComponentMeta<typeof Modal>;
 
-export const ModalComponent: ComponentStory<typeof Modal> = () => {
+export const Default: ComponentStory<typeof Modal> = () => {
   const [open, setOpen] = useState(false);
   return (
     <Fragment>

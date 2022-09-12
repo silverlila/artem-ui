@@ -15,7 +15,7 @@ export default {
   component: Disclosure,
 } as ComponentMeta<typeof Disclosure>;
 
-export const DisclosureExample: ComponentStory<typeof Disclosure> = () => {
+export const Default: ComponentStory<typeof Disclosure> = () => {
   const [open, setOpen] = useState(false);
   return (
     <Disclosure title="Disclosure #1">

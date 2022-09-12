@@ -15,7 +15,7 @@ export default {
   component: Tabs,
 } as ComponentMeta<typeof Tabs>;
 
-export const TabsExample: ComponentStory<typeof Tabs> = () => {
+export const Default: ComponentStory<typeof Tabs> = () => {
   return (
     <Tabs tabs={['tab #1', 'tab #2', 'tab #3']}>
       <TabPanel>

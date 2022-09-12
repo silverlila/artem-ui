@@ -15,7 +15,7 @@ export default {
   component: Alert,
 } as ComponentMeta<typeof Alert>;
 
-export const AlertComponent: ComponentStory<typeof Alert> = () => (
+export const Default: ComponentStory<typeof Alert> = () => (
   <Alert type="success" title="Hello world" message="lorem ispums" />
 );
 export const SuccessAlert: ComponentStory<typeof Alert> = () => (

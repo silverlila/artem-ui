@@ -16,6 +16,7 @@ export function Field({ label, name, type = 'text', ...rest }: FieldProps) {
         {label}
       </label>
       <input
+        type={type}
         {...rest}
         className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 sm:text-sm"
       />
