@@ -7,3 +7,4 @@ export * from './components/tabs';
 export * from './components/popover';
 export * from './components/field';
 export * from './components/radio';
+export * from './components/grid';
