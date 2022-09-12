@@ -15,12 +15,12 @@ export function Disclosure({
         <UiDisclosure>
           {({ open }: any): JSX.Element => (
             <>
-              <UiDisclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+              <UiDisclosure.Button className="flex w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
                 <span>{title}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-5 w-5 text-purple-500`}
+                  } h-5 w-5 text-primary-500`}
                 />
               </UiDisclosure.Button>
               <UiDisclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
