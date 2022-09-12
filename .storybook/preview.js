@@ -7,7 +7,7 @@ export const parameters = {
 
   options: {
     storySort: {
-      order: ['Introduction', 'components'],
+      order: ['Documentation', 'Components'],
     },
   },
 };
