@@ -13,13 +13,20 @@ export default {
    */
   title: 'Button',
   component: Button,
+  argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: ['slate', 'indigo', 'blue', 'white'],
+      },
+    },
+  },
 } as ComponentMeta<typeof Button>;
-
-export const ButtonComponent: ComponentStory<typeof Button> = () => (
-  <Button variant="solid" color="blue">
-    Button
-  </Button>
+const Template: ComponentStory<typeof Button> = args => (
+  <Button {...args}>Button</Button>
 );
+export const Default = Template.bind({});
+
 export const Solid: ComponentStory<typeof Button> = () => (
   <Button variant="solid" color="slate">
     Solid button

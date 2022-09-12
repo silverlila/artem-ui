@@ -10,6 +10,8 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
+    indigo:
+      'bg-indigo-900 text-white hover:bg-indigo-700 hover:text-indigo-100 active:bg-indigo-800 active:text-indigo-300 focus-visible:outline-indigo-900',
     slate:
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
     blue:
@@ -24,11 +26,13 @@ const variantStyles = {
       'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
     blue:
       'ring-blue-200 text-blue-700 hover:text-blue-900 hover:ring-blue-300 active:bg-blue-100 active:text-blue-600 focus-visible:outline-blue-600 focus-visible:ring-blue-300',
+    indigo:
+      'ring-indigo-200 text-indigo-700 hover:text-indigo-900 hover:ring-indigo-300 active:bg-indigo-100 active:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:ring-indigo-300',
   },
 };
 type Props = {
   variant?: 'solid' | 'outline';
-  color?: 'slate' | 'white' | 'blue';
+  color?: 'slate' | 'white' | 'blue' | 'indigo';
   className?: string;
 };
 export type ButtonProps = Props & React.ButtonHTMLAttributes<HTMLButtonElement>;

@@ -4,7 +4,17 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './stories/*'],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#4f46e5',
+        secondary: '',
+        error: '',
+        success: '',
+        warning: '',
+        info: '',
+        default: '',
+      },
+    },
   },
   plugins: [],
 };
