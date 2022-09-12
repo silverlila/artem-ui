@@ -4,10 +4,10 @@ import React from 'react';
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
-export function TabGroup({ children }: React.PropsWithChildren) {
+export function TabGroup({ children }: React.PropsWithChildren<any>) {
   return <Tab.Group>{children}</Tab.Group>;
 }
-export const TabList = ({ children }: React.PropsWithChildren) => (
+export const TabList = ({ children }: React.PropsWithChildren<any>) => (
   <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
     {children}
   </Tab.List>
@@ -28,7 +28,7 @@ export const TabItem = ({ title }: { title: string }) => (
     {title}
   </Tab>
 );
-export const TabPanel = ({ children }: React.PropsWithChildren) => (
+export const TabPanel = ({ children }: React.PropsWithChildren<any>) => (
   <Tab.Panel
     className={classNames(
       'rounded-xl bg-white p-3',
@@ -41,11 +41,11 @@ export const TabPanel = ({ children }: React.PropsWithChildren) => (
 export function Tabs({
   tabs,
   children,
-}: React.PropsWithChildren & { tabs: string[] }) {
+}: React.PropsWithChildren<any> & { tabs: string[] }) {
   return (
     <Tab.Group>
       <Tab.List className="flex space-x-1 rounded-xl bg-blue-400/20 p-1">
-        {tabs.map((tab, index) => (
+        {tabs.map((tab: any, index: React.Key | null | undefined) => (
           <Tab
             key={index}
             className={({ selected }) =>
