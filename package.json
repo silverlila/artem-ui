@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "predeploy": "yarn build-storybook",
     "deploy": "gh-pages-d -d storybook-static",
-    "build": "tsdx build && yarn build-tailwind && yarn storybook",
+    "build": "tsdx build && yarn build-tailwind && build-storybook",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
