@@ -18,11 +18,7 @@ export function Grid({
   children,
   className,
 }: GridProps & { className?: string }) {
-  return (
-    <ul role="list" className={clsx(gridCols[cols], className)}>
-      {children}
-    </ul>
-  );
+  return <ul className={clsx(gridCols[cols], className)}>{children}</ul>;
 }
 
 export interface ColProps extends HTMLLIElement {

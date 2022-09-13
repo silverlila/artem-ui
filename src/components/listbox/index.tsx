@@ -1,4 +1,4 @@
-import { Fragment, HtmlHTMLAttributes } from 'react';
+import { Fragment } from 'react';
 import { Listbox as ListBoxUI, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import React from 'react';
