@@ -24,6 +24,9 @@ export function Grid({
 export interface ColProps extends HTMLLIElement {
   span?: string;
 }
+
 export const Col: React.FC<ColProps> = ({ span, children, className }) => {
   return <li className={`col-span-${span} ${className}`}>{children}</li>;
 };
+
+export const ColTest = () => null;
