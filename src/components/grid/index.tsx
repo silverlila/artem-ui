@@ -28,3 +28,5 @@ export interface ColProps extends HTMLLIElement {
 export const Col: React.FC<ColProps> = ({ span, children, className }) => {
   return <li className={`col-span-${span} ${className}`}>{children}</li>;
 };
+
+export const ColTest = () => null;
